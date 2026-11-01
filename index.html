@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#111318">
+<meta name="description" content="سوريا دراما — دليل وأرشيف الدراما السورية. ابحث عن المسلسلات والممثلين وسنوات الإنتاج وروابط المشاهدة الرسمية.">
+<title>سوريا دراما | أرشيف الدراما السورية</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="#"><span class="brand-mark">س</span><span><strong>سوريا دراما</strong><small>حكاية الدراما السورية</small></span></a>
+<nav class="desktop-nav"><a class="active" href="#home">الرئيسية</a><a href="#library">المسلسلات</a><a href="#categories">التصنيفات</a><a href="#about">عن المنصة</a></nav><button class="menu-button" id="menuButton" aria-label="فتح القائمة">☰</button></header>
+<main id="home">
+<section class="hero"><div class="hero-content"><span class="eyebrow">أرشيف الدراما السورية</span><h1>كل حكاية سورية<br><em>إلها مكان هون.</em></h1><p>اكتشف المسلسلات السورية، تعرّف على نجومها، وتصفّح الأعمال حسب النوع وسنة الإنتاج — مع روابط للمشاهدة الرسمية.</p><a class="primary-button" href="#library">اكتشف المسلسلات <span>←</span></a></div><div class="hero-art" aria-hidden="true"><div class="arch arch-one"></div><div class="arch arch-two"></div><div class="hero-stamp">دراما<br><b>سورية</b></div><div class="film-strip"></div></div></section>
+<section class="stats"><div><strong>أرشيف مفتوح</strong><span>قديم وحديث</span></div><div><strong>تصنيفات سورية</strong><span>حسب نوع العمل</span></div><div><strong>روابط رسمية</strong><span>مشاهدة من المصادر الأصلية</span></div></section>
+<section class="section" id="categories"><div class="section-heading"><div><span class="eyebrow">تصفّح حسب ذوقك</span><h2>عالم الدراما السورية</h2></div></div><div class="category-grid" id="categoryGrid"><button class="category-tile selected" data-category="الكل"><span>✦</span><b>كل الأعمال</b></button><button class="category-tile" data-category="بيئة شامية"><span>⌂</span><b>بيئة شامية</b></button><button class="category-tile" data-category="كوميديا"><span>☻</span><b>كوميديا</b></button><button class="category-tile" data-category="اجتماعي"><span>◈</span><b>اجتماعي</b></button><button class="category-tile" data-category="تاريخي"><span>♜</span><b>تاريخي</b></button><button class="category-tile" data-category="كلاسيكي"><span>▣</span><b>كلاسيكيات</b></button></div></section>
+<section class="section" id="library"><div class="section-heading library-heading"><div><span class="eyebrow">من الأرشيف</span><h2>مسلسلات تستحق التذكّر</h2><p class="section-note">هذه بيانات أولية تجريبية لتوضيح شكل المنصة، ويمكن تعديلها وتوسيعها.</p></div><label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="ابحث عن مسلسل..." autocomplete="off"></label></div>
+<div class="filter-row"><label>سنة الإنتاج <select id="yearFilter"><option value="all">كل السنوات</option></select></label><label>الترتيب <select id="sortFilter"><option value="featured">الأبرز أولاً</option><option value="newest">الأحدث إنتاجاً</option><option value="oldest">الأقدم إنتاجاً</option><option value="az">الاسم أبجدياً</option></select></label><span id="resultCount" class="result-count"></span></div><div class="series-grid" id="seriesGrid"></div><div class="empty-state" id="emptyState" hidden>ما لقينا نتائج مطابقة. جرّب كلمة بحث أو تصنيفاً آخر.</div></section>
+<section class="quote-band"><span>«</span><p>الدراما ذاكرة الناس… وحكايات بتضل عايشة.</p><span>»</span></section>
+<section class="section about-section" id="about"><div><span class="eyebrow">عن سوريا دراما</span><h2>مرجع واحد للدراما السورية</h2></div><p>سوريا دراما مشروع أرشيفي مستقل يهدف إلى تنظيم معلومات المسلسلات السورية وأعمال الفنانين، وتسهيل الوصول إلى مصادر المشاهدة الرسمية. لا نستضيف الحلقات أو نعيد نشرها دون ترخيص.</p></section>
+</main>
+<footer><a class="brand footer-brand" href="#"><span class="brand-mark">س</span><span><strong>سوريا دراما</strong><small>حكاية الدراما السورية</small></span></a><span>© <span id="yearNow"></span> سوريا دراما — النسخة التجريبية الأولى</span></footer>
+<dialog id="seriesDialog" class="series-dialog"><button class="dialog-close" id="dialogClose" aria-label="إغلاق">×</button><div id="dialogContent"></div></dialog>
+<script src="data.js"></script><script src="app.js"></script>
+</body></html>
